@@ -1,4 +1,3 @@
-import Header from "./components/Header"
 import Inicio from "./components/Inicio"
 import PorquePrepararte from "./components/PorquePrepararte"
 import ComoTrabajamos from "./components/ComoTrabajamos"
@@ -13,7 +12,6 @@ function App() {
 
   return (
     <>
-      <Header/>
       <Inicio/>
 
       <div className="relative">

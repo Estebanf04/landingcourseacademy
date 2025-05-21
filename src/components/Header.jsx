@@ -6,12 +6,10 @@ export default function Header() {
 
   const [isOpen, setIsOpen] = useState(false)
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen)
-  }
-
+  const toggleMenu = () => setIsOpen(!isOpen)
+  
   return (
-        <header className="bg-black flex justify-between items-center px-5 md:px-10 py-5">
+        <header className="flex justify-between items-center px-5 md:px-10 py-5">
             <a href="/">
                 <img src="./LogoFandosITAcademy.png" width={128}/>
             </a>
@@ -31,16 +29,16 @@ export default function Header() {
             </div>
 
             {isOpen && (
-              <div className="block md:hidden border-l-2 border-b-2 border-cyan-100 bg-black absolute w-[80%] h-full top-0 right-0 text-center  transition-all">
+              <div className="block z-40 md:hidden bg-black absolute w-[100%] h-full top-0 right-0 text-center transition-all">
 
-                  <nav className="text-gray-100 space-y-10 mt-10 text-md items-center">
+                  <nav className="text-gray-100 space-y-10 mt-10 text-md flex flex-col items-end">
                         <button 
                         onClick={toggleMenu}
-                        className="text-2xl">
+                        className="text-3xl pr-6">
                             <IoCloseSharp color="white"/>
                         </button>
 
-                        <div className="text-gray-100 space-y-6 flex flex-col text-md items-center">
+                        <div className="text-gray-100 space-y-6 flex flex-col text-2xl items-end pr-6">
                             <a href="#comotrabajamos" className="hover:text-cyan-300 transition" onClick={toggleMenu}>¿How do we work?</a>
                             <a href="#metodologia" className="hover:text-cyan-300 transition" onClick={toggleMenu}>Methodology</a>
                             <a href="#contacto" className="hover:text-cyan-300 transition" onClick={toggleMenu}>Contact</a>

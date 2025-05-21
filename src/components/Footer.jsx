@@ -9,7 +9,7 @@ export default function Footer() {
                 >
                     <img 
                     src="./LogoFandosITAcademy.png" 
-                    width={200}
+                    width={150}
                     />
                 </a>
               <p className="text-white text-sm md:text-lg font-light">&copy; Fandos IT Academy 2025 - All rights reserved</p>

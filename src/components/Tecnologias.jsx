@@ -1,8 +1,8 @@
 
 export default function Tecnologias() {
   return (
-      <div className="py-20 relative" id="tecnologias">
-        <div class="absolute top-0 z-[-2] h-full w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+      <div className="py-10 relative" id="tecnologias">
+        <div className="absolute top-0 -z-10 h-full w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
           <div className="max-w-5xl mx-auto">
               <div className="flex justify-center">
                   <div className="grid md:grid-cols-7 sm:grid-cols-4 grid-cols-2 gap-4 items-center text-center">
